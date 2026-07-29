@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "Association of Mode of Delivery and Birth Order with Hyperinsulinemia in Neonatal Cord Blood: analysis code"
+type: software
+authors:
+  - family-names: Nemes
+    given-names: "Botond András"
+  - family-names: Nádasdi
+    given-names: Ákos
+  - family-names: Németh
+    given-names: László
+  - family-names: Benyó
+    given-names: Zoltán
+  - family-names: Firneisz
+    given-names: Gábor
+    email: firneisz.gabor@semmelweis.hu
+    affiliation: "Semmelweis University, Institute of Clinical Pathophysiology"
+license: MIT
+version: 1.0.0
+date-released: "2026-07-29"
