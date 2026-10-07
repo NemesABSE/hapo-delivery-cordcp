@@ -42,6 +42,32 @@ Run from the repository root, in this order. Scripts 04 and 05 reuse objects cre
 vectors only, no participant data), so that individual sections can be run without repeating the
 full selection.
 
+### Second revision analyses
+
+`R/revision2/` holds the analyses added in the second revision. Every script sources
+`R/revision2/_common/setup.R`, which runs the setup and helper blocks of
+`R/02_supplementary_forests.r`, so data preparation, variable lists and standardization are those
+of the main analysis. Run each script from its own folder; it writes its tables next to itself.
+The result tables are included, so the numbers can be checked without the data.
+
+| Folder | Manuscript item |
+|---|---|
+| `point1_model_equivalence/` | Fig. 3, the final model re-parameterized with one multilevel variable, complete-case and Bayesian |
+| `point2_within_stratum_contrasts/` | Supplementary Table 4, effects within birth order strata; the model without the cesarean delivery by first delivery interaction (global effects) |
+| `point3_missing_birth_order/` | Supplementary Tables 8 and 9, birth-order missingness model and delta-adjusted tipping-point analysis |
+| `point4_delivery_type/` | counts of the four recorded delivery types |
+| `point6_cord_glucose_conditioning/` | Supplementary Table 5 and Supplementary Fig. 5, omission models and path analysis |
+| `point7_ancestry_heterogeneity/` | Supplementary Fig. 10, ancestry interaction models, likelihood-ratio tests, Cochran's Q |
+| `posthoc_power_recalc/`, `power_global_1005/` | Supplementary Table 6, observed power |
+| `table2_global_cd_0924/`, `table2_ga_bw_global_1006/` | Table 2, global effects in every sensitivity scenario |
+| `supp_v9_1006/`, `supp_v11_table8_1006/`, `supp_v13_table7_1006/` | checks of Supplementary Tables 1, 2, 7 and 8 |
+| `fig2a_stars_1006/`, `suppfig_stars_1006/` | Fig. 2a and the supplementary forest plots with the stratum-specific contrasts marked |
+
+Scripts that read a saved JointAI fit need `HAPO_BAYES`, the directory holding the fits
+(`Sys.setenv(HAPO_BAYES = "/path/to/fits")`). The fits are not included, for the reason given
+below; the `*_fit_jointai_*.R` scripts refit the birth-type and no-interaction joint models
+(JointAI 1.1.0, 3 chains, 5,300 iterations, thinning 5, seed 2020).
+
 ### Bayesian models
 
 `01_main_pipeline.r` loads two saved JointAI fits (`imputalt.rData`, `imputalt_osszevont.rData`).
@@ -61,7 +87,7 @@ checked without access to the data:
 
 ## Environment
 
-R 4.2.3. Packages: `MASS`, `broom`, `dplyr`, `grid`, `pROC`, `ROCR`, `forestploter`, `tableone`,
+R 4.2.3 (second revision JointAI fits: R 4.5.2). Packages: `MASS`, `broom`, `dplyr`, `grid`, `pROC`, `ROCR`, `forestploter`, `tableone`,
 `flextable`, `officer`, `performance`, `DHARMa`, `pwr`, `sensitivity`, and `JointAI` (with JAGS)
 for the Bayesian sections only.
 

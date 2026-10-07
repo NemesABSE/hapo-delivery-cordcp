@@ -1,0 +1,8 @@
+"test","df","deviance_difference","p_LRT","AIC_without","AIC_with"
+"Ancestry x cesarean delivery added to the final model",3,2.45691109074642,0.483128566195521,1653.17637367916,1656.71946258842
+"Ancestry x first delivery added to the final model",3,5.77292597679934,0.123195938684772,1653.17637367916,1653.40344770237
+"Both interaction sets added",6,7.7459967735781,0.257309116233918,1653.17637367916,1657.43037690559
+"Ancestry x cesarean delivery, given ancestry x first delivery",3,1.97307079677876,0.578014732676654,1653.40344770237,1657.43037690559
+"Ancestry x first delivery, given ancestry x cesarean delivery",3,5.28908568283168,0.151812174461306,1656.71946258842,1657.43037690559
+"Ancestry x cesarean delivery (Wald)",3,2.50485972300385,0.474413462754643,NA,NA
+"Ancestry x first delivery (Wald)",3,5.77412371341264,0.12313192292205,NA,NA

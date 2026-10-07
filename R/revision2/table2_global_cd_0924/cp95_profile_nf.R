@@ -1,0 +1,6 @@
+## profile CI of the non-firstborn CD main effect in the 95th-percentile final-structure model (Table 2 column consistency)
+Sys.setenv(REV2_ROOT = normalizePath("..")); source("../_common/setup.R")
+d95 <- adatok_cp95 %>% select(all_of(c(id_variable, magyarazo_bovitett_r2, "CP_binary95"))) %>% na.omit()
+d95 <- standardize_predictors(d95, magyarazo_bovitett_r2)
+m4 <- glm(build_formula("CP_binary95", c(magyarazo_bovitett_r2, int3)), family = binomial(), data = d95)
+o <- orci(m4); print(o[o$term %in% c("`Cesarean Section`1", "`1st time pregnant`TRUE"), ], digits = 4)

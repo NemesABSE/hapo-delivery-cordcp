@@ -1,0 +1,6 @@
+"model","n","AUC","CD_OR","CD_p","first_OR"
+"Full final model (3 interactions), CD main effect = within non-firstborns",3482,0.8232,"2.23 (1.49 to 3.29)",6.99e-05,"0.51 (0.34 to 0.74)"
+"Final model without CD x first delivery (global CD effect), cord PG kept",3482,0.8216,"2.91 (2.13 to 3.97)",1.7e-11,"0.65 (0.48 to 0.88)"
+"Without CD x first delivery and without CD x cord PG, cord PG main effect kept",3482,0.8206,"3.04 (2.23 to 4.14)",1.59e-12,"0.65 (0.48 to 0.88)"
+"Without CD x first delivery, cord PG omitted (main effect and CD x cord PG): GLOBAL glucose-free CD effect",3482,0.7636,"1.81 (1.36 to 2.40)",4.59e-05,"0.87 (0.65 to 1.16)"
+"No interactions at all, cord PG omitted",3482,0.7615,"1.79 (1.35 to 2.38)",5.23e-05,"0.86 (0.64 to 1.15)"

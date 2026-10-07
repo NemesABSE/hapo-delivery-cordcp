@@ -1,0 +1,8 @@
+"contrast","GLM_complete_case","GLM_p","Bayes_joint_model_imputed","Bayes_P_OR_below_1"
+"CS vs vaginal, firstborns","4.36 (2.73 to 6.98)",8.27e-10,"4.86 (3.27 to 7.19)",0
+"CS vs vaginal, non-firstborns","2.23 (1.50 to 3.30)",6.99e-05,"2.74 (1.94 to 3.85)",0
+"Non-first vs first, vaginal delivery","1.97 (1.34 to 2.90)",0.000537,"1.70 (1.21 to 2.37)",0.001
+"Non-first vs first, cesarean delivery","1.01 (0.62 to 1.63)",0.98,"0.96 (0.61 to 1.48)",0.563
+"Non-first vaginal vs first vaginal (Fig 3 row)","1.97 (1.34 to 2.90)",0.000537,"1.70 (1.21 to 2.37)",0.001
+"First CS vs first vaginal (Fig 3 row)","4.36 (2.73 to 6.98)",8.27e-10,"4.86 (3.27 to 7.19)",0
+"Non-first CS vs first vaginal (Fig 3 row)","4.39 (2.66 to 7.25)",7.64e-09,"4.66 (3.01 to 7.35)",0

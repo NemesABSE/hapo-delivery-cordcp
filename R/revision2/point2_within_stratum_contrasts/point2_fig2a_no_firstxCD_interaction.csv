@@ -1,0 +1,23 @@
+"term","OR","lo","hi","p"
+"(Intercept)",0.028,0.019,0.042,1.39e-72
+"`Maternal age at OGTT`",1.108,0.952,1.29,0.186
+"`Maternal BMI at OGTT`",1.059,0.844,1.322,0.615
+"EthnicityBlack",1.883,1.249,2.831,0.0024
+"EthnicityAsian",0.784,0.472,1.276,0.336
+"EthnicityHispanic",1.131,0.75,1.696,0.554
+"`1st time pregnant`TRUE",0.65,0.475,0.884,0.00632
+"`Cesarean Section`1",2.91,2.131,3.972,1.7e-11
+"`Maternal GDM`",1.128,0.992,1.279,0.064
+"`Age of gestation at delivery`",0.837,0.722,0.971,0.019
+"Birthweight",2.36,1.902,2.937,9.31e-15
+"`Neonatal sex (female)`2",2.34,1.774,3.103,2.43e-09
+"m_HbA1c_percent",1.185,1.017,1.38,0.0298
+"b_N_HCMn",0.878,0.727,1.053,0.172
+"b_N_LNGMn",0.841,0.699,1.013,0.0671
+"HOMA2_IR",1.349,1.179,1.54,1.06e-05
+"WtMgain.till.OGTT",1.162,1.025,1.319,0.019
+"b_CordPGC_mmol.L",1.927,1.654,2.249,5.53e-17
+"`Cesarean Section`1:b_CordPGC_mmol.L",1.318,1.026,1.704,0.0329
+"`Maternal BMI at OGTT`:EthnicityBlack",1.14,0.832,1.567,0.417
+"`Maternal BMI at OGTT`:EthnicityAsian",0.832,0.483,1.407,0.498
+"`Maternal BMI at OGTT`:EthnicityHispanic",0.882,0.647,1.201,0.424
